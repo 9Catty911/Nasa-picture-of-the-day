@@ -12,6 +12,7 @@
 		D53ECD60229967A40070C221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53ECD5E229967A40070C221 /* Main.storyboard */; };
 		D53ECD62229967A50070C221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53ECD61229967A50070C221 /* Assets.xcassets */; };
 		D53ECD65229967A50070C221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53ECD63229967A50070C221 /* LaunchScreen.storyboard */; };
+		D53ECD72229971A10070C221 /* Fotoinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ECD71229971A10070C221 /* Fotoinfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D53ECD61229967A50070C221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53ECD64229967A50070C221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53ECD66229967A50070C221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53ECD71229971A10070C221 /* Fotoinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fotoinfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		D53ECD59229967A40070C221 /* Nasa picture of the day */ = {
 			isa = PBXGroup;
 			children = (
-				D53ECD5A229967A40070C221 /* AppDelegate.swift */,
-				D53ECD5C229967A40070C221 /* ViewController.swift */,
-				D53ECD5E229967A40070C221 /* Main.storyboard */,
-				D53ECD61229967A50070C221 /* Assets.xcassets */,
-				D53ECD63229967A50070C221 /* LaunchScreen.storyboard */,
-				D53ECD66229967A50070C221 /* Info.plist */,
+				D53ECD6C229967C60070C221 /* App */,
+				D53ECD70229971490070C221 /* Model */,
+				D53ECD6F229969B70070C221 /* Resources */,
+				D53ECD6D229969390070C221 /* View */,
+				D53ECD6E2299694E0070C221 /* ViewController */,
 			);
 			path = "Nasa picture of the day";
+			sourceTree = "<group>";
+		};
+		D53ECD6C229967C60070C221 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D53ECD5A229967A40070C221 /* AppDelegate.swift */,
+				D53ECD66229967A50070C221 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D53ECD6D229969390070C221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D53ECD63229967A50070C221 /* LaunchScreen.storyboard */,
+				D53ECD5E229967A40070C221 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D53ECD6E2299694E0070C221 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D53ECD5C229967A40070C221 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D53ECD6F229969B70070C221 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D53ECD61229967A50070C221 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D53ECD70229971490070C221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D53ECD71229971A10070C221 /* Fotoinfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53ECD72229971A10070C221 /* Fotoinfo.swift in Sources */,
 				D53ECD5D229967A40070C221 /* ViewController.swift in Sources */,
 				D53ECD5B229967A40070C221 /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Nasa picture of the day/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa picture of the day/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Nasa picture of the day/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Nasa picture of the day/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
